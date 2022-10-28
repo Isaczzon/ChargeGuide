@@ -1084,6 +1084,28 @@ body.theme-color-water--active.nav-link:visited, body.theme-color-water .border-
     border-color: #fff
 }
 
+.product-grid__item:hover body.theme-color-grass .product-grid__item__name, .product-grid__item:hover body.theme-color-grass .product-grid__item__price, body.theme-color-grass .bg-main-color, body.theme-color-grass .button--border--solid, body.theme-color-grass .mobile-nav, body.theme-color-grass .product-grid__item:hover .product-grid__item__name, body.theme-color-grass .product-grid__item:hover .product-grid__item__price, body.theme-color-grass .section--themed {
+    background-color: #fff;
+    color: #000 !important
+}
+
+.hamburger.lines:hover.active body.theme-color-grass span:after, .hamburger.lines:hover.active body.theme-color-grass span:before, .hamburger body.theme-color-grass span, .hamburger body.theme-color-grass span:after, .hamburger body.theme-color-grass span:before, body.theme-color-grass .bg-secondary-color, body.theme-color-grass .hamburger.lines:hover.active span:after, body.theme-color-grass .hamburger.lines:hover.active span:before, body.theme-color-grass .hamburger span, body.theme-color-grass .hamburger span:after, body.theme-color-grass .hamburger span:before, body.theme-color-grass .nav-link--home__text:after {
+    background-color: #fff;
+    color: #268700
+}
+
+.blogposts-centered body.theme-color-grass .blogpost-title, body.theme-color-grass .blogposts-centered .blogpost-title, body.theme-color-grass .button--border, body.theme-color-grass .font-main-color, body.theme-color-grass .nav-link, body.theme-color-grass .section__hero-content, body.theme-color-grass footer a, footer body.theme-color-grass a {
+    color: #fff
+}
+
+article body.theme-color-grass a, article body.theme-color-grass a:visited, body.theme-color-grass .employee-grid__item__email, body.theme-color-grass .font-link-color, body.theme-color-grass article a, body.theme-color-grass article a:visited {
+    color: #268700
+}
+
+body.theme-color-grass--active.nav-link:visited, body.theme-color-grass .border-main-color, body.theme-color-grass .button--border, body.theme-color-grass .nav-link--active, body.theme-color-grass .nav-link:hover {
+    border-color: #fff
+}
+
 .product-grid__item:hover body.theme-color-sun .product-grid__item__name, .product-grid__item:hover body.theme-color-sun .product-grid__item__price, body.theme-color-sun .bg-main-color, body.theme-color-sun .button--border--solid, body.theme-color-sun .mobile-nav, body.theme-color-sun .product-grid__item:hover .product-grid__item__name, body.theme-color-sun .product-grid__item:hover .product-grid__item__price, body.theme-color-sun .section--themed {
     background-color: #f8ea88;
     color: #000
@@ -1252,11 +1274,13 @@ body.theme-font-mono {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    overflow: hidden
+    overflow: hidden;
+    justify-content: center;
 }
 
 .product-grid__item {
     height: 300px;
+    border-radius: 5px;
     position: relative;
     overflow: hidden;
     -ms-flex: 1 1 100%;
@@ -1264,7 +1288,9 @@ body.theme-font-mono {
     max-width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50%
+    background-position: 50%;
+    margin: 10px;
+    filter: drop-shadow(2px 3px 5px #222)
 }
 
     .product-grid__item:hover {
@@ -1285,7 +1311,7 @@ body.theme-font-mono {
 }
 
 .product-grid__item-image {
-    max-width: 100%
+    max-width: 100%;
 }
 
 .product-grid__item__name, .product-grid__item__price {
@@ -1304,6 +1330,7 @@ body.theme-font-mono {
     padding-bottom: 50px;
     display: -ms-flexbox;
     display: flex;
+    background: #779FA8 !important;
     -ms-flex-align: center;
     align-items: center;
     position: absolute;
@@ -1315,7 +1342,7 @@ body.theme-font-mono {
     padding-top: 20px;
     padding-bottom: 20px;
     background: #fff;
-    transition: padding .2s cubic-bezier(.694,.0482,.335,1),background .2s cubic-bezier(.694,.0482,.335,1);
+    transition: padding .2s cubic-bezier(.694,.0482,.335,1),background .5s cubic-bezier(.694,.0482,.335,1);
     left: 0;
     position: fixed
 }
@@ -1340,19 +1367,19 @@ body.theme-font-mono {
     }
 
 body.frontpage .header:not(.header--fixed) .nav-link--home__text:after {
-    background-color: #fff
+    background-color: #000
 }
 
 body.frontpage .header:not(.header--fixed) .nav-link {
-    color: #fff
+    color: #000
 }
 
     body.frontpage .header:not(.header--fixed) .nav-link--active, body.frontpage .header:not(.header--fixed) .nav-link:hover {
-        border-bottom-color: #fff
+        border-bottom-color: #000
     }
 
 body.frontpage .header:not(.header--fixed) .hamburger span, body.frontpage .header:not(.header--fixed) .hamburger span:after, body.frontpage .header:not(.header--fixed) .hamburger span:before {
-    background-color: #fff
+    background-color: #000
 }
 
 body.fixed .top-nav.-open {
@@ -1365,7 +1392,7 @@ body.fixed .top-nav.-open {
 
 footer {
     padding-top: 60px;
-    padding-bottom: 60px
+    padding-bottom: 60px;
 }
 
 .logo {
@@ -1377,7 +1404,9 @@ footer {
     max-height: 100px;
     height: auto;
     margin-left: 20px;
-    display: block
+    display: block;
+
+    filter: drop-shadow(2px 3px 5px #222)
 }
 
 .nav-bar {
@@ -1390,6 +1419,9 @@ footer {
 }
 
 .nav-bar--list {
+    background-color: #779FA8;
+    border-radius: 5px;
+    filter: drop-shadow(2px 3px 5px #222);
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-align: start;
@@ -1437,10 +1469,11 @@ a.nav-link.nav-link--black {
     font-size: 24px;
     font-weight: 900;
     margin-right: 40px;
-    color: #f4f4f0
+    color: #000
 }
 
     .nav-link--home:hover {
+        color: #000;
         box-shadow: none
     }
 
@@ -1474,8 +1507,9 @@ a.nav-link.nav-link--black {
 }
 
 .section--header {
-    min-height: 320px;
-    padding-top: 130px
+    min-height: 250px;
+    padding-top: 130px;
+    padding-bottom: 0 !important
 }
 
 .section--content-center {
@@ -1634,6 +1668,7 @@ body.frontpage .section__hero-content {
     }
 
 .blogposts {
+    background-color: #ebebeb;
     margin-left: auto;
     margin-right: auto
 }
@@ -2016,6 +2051,7 @@ article {
 
 .mobile-nav--open {
     opacity: 1;
+    color: #000 !important;
     height: 100vh
 }
 
@@ -2090,7 +2126,8 @@ article {
 }
 
 .no-air {
-    margin: 0
+    margin: 0;
+    color: #000
 }
 
 .no-scroll {
@@ -2107,7 +2144,7 @@ article {
     }
 
     .input-group-lg > .input-group-btn > input[type=date].btn, .input-group-lg > .input-group-btn > input[type=datetime-local].btn, .input-group-lg > .input-group-btn > input[type=month].btn, .input-group-lg > .input-group-btn > input[type=time].btn, .input-group-lg > input[type=date].form-control, .input-group-lg > input[type=date].input-group-addon, .input-group-lg > input[type=datetime-local].form-control, .input-group-lg > input[type=datetime-local].input-group-addon, .input-group-lg > input[type=month].form-control, .input-group-lg > input[type=month].input-group-addon, .input-group-lg > input[type=time].form-control, .input-group-lg > input[type=time].input-group-addon, .input-group-lg input[type=date], .input-group-lg input[type=datetime-local], .input-group-lg input[type=month], .input-group-lg input[type=time], input[type=date].input-lg, input[type=datetime-local].input-lg, input[type=month].input-lg, input[type=time].input-lg {
-        line-height: 46px
+        line-height: 46px;
     }
 }
 
@@ -2326,7 +2363,7 @@ article {
 
     .form-inline .form-group {
         display: inline-block;
-        margin-bottom: 0;
+        margin-bottom: 0px;
         vertical-align: middle
     }
 
@@ -2346,7 +2383,7 @@ article {
     }
 
         .form-inline .input-group .form-control, .form-inline .input-group .input-group-addon, .form-inline .input-group .input-group-btn {
-            width: auto
+            width: auto;
         }
 
         .form-inline .input-group > .form-control {
@@ -2397,7 +2434,8 @@ article {
     .employee-grid__item, .product-grid__item {
         -ms-flex: 1 1 50%;
         flex: 1 1 50%;
-        max-width: 50%
+        max-width: 50%;
+        padding: 2px;
     }
 
     .employee-grid__item {
@@ -2891,7 +2929,7 @@ article {
 
 @media (max-width:992px) {
     .header .nav-bar {
-        display: none
+        display:none
     }
 
     .nav-bar {
