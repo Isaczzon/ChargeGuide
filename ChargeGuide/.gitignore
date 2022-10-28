@@ -31,6 +31,9 @@ bld/
 [Ll]og/
 [Ll]ogs/
 [Tt][Ee][Mm][Pp]/
+../volume/
+../volume1/
+
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/

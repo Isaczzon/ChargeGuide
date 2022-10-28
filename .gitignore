@@ -30,6 +30,9 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+volume/
+volume1/
+
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -349,3 +352,4 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+volume/secrets/machine-key
